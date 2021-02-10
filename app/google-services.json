@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "386287607297",
+    "project_id": "fir-contactapp-780d5",
+    "storage_bucket": "fir-contactapp-780d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386287607297:android:7bf627e3c9e19835882a00",
+        "android_client_info": {
+          "package_name": "com.polish.firebasecontactapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386287607297-a52cfbm56ehnsm47a1se45dc897m38m7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJQD0lEWV9DMsPudIJCB8EKQ2WBqktKU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386287607297-a52cfbm56ehnsm47a1se45dc897m38m7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

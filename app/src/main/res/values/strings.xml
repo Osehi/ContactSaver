@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FirebaseContactApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contact_list_item_first_name_str">First Name</string>
+    <string name="contact_list_item_last_name_str">Last Name</string>
+    <string name="contact_list_item_phone_number_str">Phone Number</string>
+
+</resources>
