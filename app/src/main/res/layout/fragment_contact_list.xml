@@ -9,11 +9,35 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/frag_contact_list_view_rv"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:listitem="@layout/contact_list_item"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/frag_contact_list_heading_iv" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/frag_contact_list_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="48dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/frag_contact_list_heading_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_csheading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

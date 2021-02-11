@@ -5,5 +5,9 @@
     <string name="contact_list_item_first_name_str">First Name</string>
     <string name="contact_list_item_last_name_str">Last Name</string>
     <string name="contact_list_item_phone_number_str">Phone Number</string>
+    <string name="frag_add_contact_first_name_str">First Name</string>
+    <string name="frag_add_contact_last_name_str">Last Name</string>
+    <string name="frag_add_contact_phone_number_str">Phone Number</string>
+    <string name="frag_add_contact_button_str">Add Contact</string>
 
 </resources>

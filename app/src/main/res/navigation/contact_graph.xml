@@ -10,4 +10,9 @@
         android:name="com.polish.firebasecontactapp.views.ContactListFragment"
         android:label="fragment_contact_list"
         tools:layout="@layout/fragment_contact_list" />
+    <fragment
+        android:id="@+id/addContacFragment"
+        android:name="com.polish.firebasecontactapp.views.AddContacFragment"
+        android:label="fragment_add_contac"
+        tools:layout="@layout/fragment_add_contac" />
 </navigation>
