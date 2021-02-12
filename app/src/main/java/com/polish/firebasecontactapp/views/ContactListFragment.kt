@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -18,6 +19,7 @@ import com.polish.firebasecontactapp.adapter.ContactListAdapter
 import com.polish.firebasecontactapp.contants.Constant
 import com.polish.firebasecontactapp.database.Storage
 import com.polish.firebasecontactapp.databinding.FragmentContactListBinding
+import com.polish.firebasecontactapp.helper.OnItemClickListener
 import com.polish.firebasecontactapp.model.Contact
 
 
@@ -52,6 +54,9 @@ class ContactListFragment : Fragment() {
 //        return inflater.inflate(R.layout.fragment_contact_list, container, false)
         _binding = FragmentContactListBinding.inflate(inflater, container, false)
         val view = binding.root
+        /**
+         * QUERY THE LIST FROM DATABASE
+         */
         basicQueryValueListener()
         /**
          * initialize views
@@ -91,7 +96,11 @@ class ContactListFragment : Fragment() {
                 for (contactSnapshot in snapshot.children){
                     val singleContact = contactSnapshot.getValue(Contact::class.java)
                     retrievedList.add(singleContact!!)
-                    contactSourceAdapter = ContactListAdapter(retrievedList)
+                    contactSourceAdapter = ContactListAdapter(retrievedList, object :OnItemClickListener{
+                        override fun onClick(item: Contact) {
+                            Toast.makeText(requireContext(), "Item Clcicked", Toast.LENGTH_LONG).show()
+                        }
+                    })
                     contactSourceAdapter.notifyDataSetChanged()
                     displatContact.adapter = contactSourceAdapter
                     Log.d(TAG, "output is ${retrievedList}")
